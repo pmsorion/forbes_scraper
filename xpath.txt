@@ -1,0 +1,4 @@
+Link = $x('//div[@class="card card--small"]/a/@href').map(x => x.value)
+Title = $x('//div[@id="pinno-post-content"]/header/h1/text()').map(x => x.wholeText)
+Summary = $x('//div[@id="pinno-post-content"]/header/span/p/text()').map(x => x.wholeText)
+Body = $x('//div[@id="pinno-content-main"]/p/text()').map(x => x.wholeText)
